@@ -1,0 +1,32 @@
+# Build output
+bin/
+obj/
+artifacts/
+
+# Test output
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Visual Studio and other IDE user state
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+_ReSharper*/
+*.ReSharper
+
+# NuGet packages and locally-created package files
+packages/
+*.nupkg
+*.snupkg
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
