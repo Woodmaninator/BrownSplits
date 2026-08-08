@@ -4,6 +4,7 @@ using Xunit;
 
 namespace BrownSplits.Tests;
 
+// Verifies that LiveSplit can discover the plugin's public component factory.
 public sealed class AssemblyRegistrationTests
 {
     [Fact]

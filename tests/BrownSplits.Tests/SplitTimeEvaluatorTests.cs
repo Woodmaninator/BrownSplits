@@ -3,6 +3,7 @@ using Xunit;
 
 namespace BrownSplits.Tests;
 
+// Covers percentile calculation, recent-history limits, and the best-time safeguard.
 public sealed class SplitTimeEvaluatorTests
 {
     [Fact]

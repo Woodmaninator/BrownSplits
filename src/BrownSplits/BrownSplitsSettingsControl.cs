@@ -4,6 +4,7 @@ using System.Windows.Forms;
 
 namespace BrownSplits;
 
+// Builds the WinForms settings panel shown in LiveSplit's layout editor.
 internal sealed class BrownSplitsSettingsControl : UserControl
 {
     private readonly BrownSplitsSettings settings;
@@ -35,7 +36,7 @@ internal sealed class BrownSplitsSettingsControl : UserControl
         colorButton = new Button
         {
             BackColor = settings.OverrideColor,
-            AccessibleDescription = "Selects the color used for qualifying slow splits.",
+            AccessibleDescription = "Selects the color used for qualifying shit splits.",
             AccessibleName = "Brown split override color",
             FlatStyle = FlatStyle.Flat,
             Height = 25,
@@ -47,7 +48,7 @@ internal sealed class BrownSplitsSettingsControl : UserControl
 
         percentileInput = new NumericUpDown
         {
-            AccessibleDescription = "The historical split-time percentile that a completed segment must reach.",
+            AccessibleDescription = "The time percentile that a completed segment must reach.",
             AccessibleName = "Bad-time percentile",
             DecimalPlaces = 1,
             Enabled = settings.UsePercentile,
@@ -99,7 +100,7 @@ internal sealed class BrownSplitsSettingsControl : UserControl
         };
 
         AddDescription(layout, 0,
-            "BrownSplits changes semantic live timers and deltas as soon as the segment meets all enabled conditions below (If the split was hot garbage).",
+            "BrownSplits changes live timers and deltas as soon as the segment meets all enabled conditions below (If the split was hot garbage).",
             false);
         AddRow(layout, 1, "Brown Split Color:", colorButton);
         AddDescription(layout, 2,

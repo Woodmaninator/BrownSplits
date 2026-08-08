@@ -7,6 +7,7 @@ using Xunit;
 
 namespace BrownSplits.Tests;
 
+// Covers Harmony registration and per-display brown-color behavior.
 public sealed class BrownSplitsRuntimeTests
 {
     [Fact]

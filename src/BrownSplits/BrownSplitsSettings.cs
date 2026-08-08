@@ -7,9 +7,9 @@ namespace BrownSplits;
 
 internal sealed class BrownSplitsSettings
 {
-    internal const double DefaultPercentile = 95.0; // How bad the splits have to be to be considered "brown"
-    internal const int DefaultRecentAttemptCount = 100; // How many recent attempts are considered when calculating the percentile
-    internal static readonly Color DefaultOverrideColor = Color.FromArgb(0x5F, 0x40, 0x47); // Color of the brown splits
+    internal const double DefaultPercentile = 90.0; // How bad the splits have to be to be considered "brown"
+    internal const int DefaultRecentAttemptCount = 20; // How many recent attempts are considered when calculating the percentile
+    internal static readonly Color DefaultOverrideColor = Color.FromArgb(0x5F, 0x40, 0x00); // Color of the brown splits
 
     public Color OverrideColor { get; set; } = DefaultOverrideColor;
 

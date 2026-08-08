@@ -4,6 +4,7 @@ using System.Linq;
 
 namespace BrownSplits;
 
+// Calculates historical bad-time thresholds and checks segment times against them
 internal static class SplitTimeEvaluator
 {
     public static bool IsSlowerThanBest(TimeSpan currentSegmentTime, TimeSpan? bestSegmentTime)
