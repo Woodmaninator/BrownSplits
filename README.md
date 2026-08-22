@@ -1,6 +1,6 @@
 # BrownSplits
 
-Have you ever had asplit where you thought to yourself: "This might be the worst I have ever performed in this section of the speedrun."? **BrownSplits** has you covered. It is a LiveSplit component that overrides the usual green, red, and gold comparison colors and adds brown splits for runs that truly deserve public shame.
+Have you ever had a split where you thought to yourself: "This might be the worst I have ever performed in this section of the speedrun."? **BrownSplits** has you covered. It is a LiveSplit component that overrides the usual green, red, and gold comparison colors and adds brown splits for runs that truly deserve public shame.
 
 ## Possible Configurations
 
@@ -20,17 +20,6 @@ Have you ever had asplit where you thought to yourself: "This might be the worst
 
 ## How it works
 
-- The plugin follows LiveSplit's active timing method (Real Time or Game Time).
-- It reads only real attempts from the current segment's `SegmentHistory`; imported
-  helper entries such as best-segment/PB history are not counted.
-- The component intercepts LiveSplit's shared semantic color decision. While the
-  current segment is running, standard live displays such as Timer, Delta, and Live
-  Segment can turn brown immediately when the threshold is crossed. After splitting,
-  only the qualifying completed row remains overridden; all other rows keep their
-  normal colors.
-- The layout's global colors are never modified.
-
-The override applies everywhere that calls LiveSplit's shared `GetSplitColor`
-helper, including standard split, delta, previous/live-segment, and timer components.
-A component with its own enabled color override, or one that bypasses that helper,
-cannot be affected by another plugin.
+- The plugin follows LiveSplit's active timing method (Real Time or Game Time) and overrides the standard colors once the split is absolute garbage.
+- It reads only real attempts from the current segment's `SegmentHistory`. Any imported helper entries are not counted.
+- The override applies everywhere that calls LiveSplit's shared `GetSplitColor` helper, including standard split, delta, previous/live-segment, and timer components.
